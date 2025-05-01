@@ -1,0 +1,695 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="style.css">
+  <title>ROBODRONE</title>
+</head>
+<body>
+ 
+  <div class="wrapper">
+    <header>
+        <div class="logo">
+      <svg xmlns="http://www.w3.org/2000/svg" width="46" height="46" fill="currentColor" class="bi bi-robot" viewBox="0 0 16 16">
+        <path d="M6 12.5a.5.5 0 0 1 .5-.5h3a.5.5 0 0 1 0 1h-3a.5.5 0 0 1-.5-.5M3 8.062C3 6.76 4.235 5.765 5.53 5.886a26.6 26.6 0 0 0 4.94 0C11.765 5.765 13 6.76 13 8.062v1.157a.93.93 0 0 1-.765.935c-.845.147-2.34.346-4.235.346s-3.39-.2-4.235-.346A.93.93 0 0 1 3 9.219zm4.542-.827a.25.25 0 0 0-.217.068l-.92.9a25 25 0 0 1-1.871-.183.25.25 0 0 0-.068.495c.55.076 1.232.149 2.02.193a.25.25 0 0 0 .189-.071l.754-.736.847 1.71a.25.25 0 0 0 .404.062l.932-.97a25 25 0 0 0 1.922-.188.25.25 0 0 0-.068-.495c-.538.074-1.207.145-1.98.189a.25.25 0 0 0-.166.076l-.754.785-.842-1.7a.25.25 0 0 0-.182-.135"/>
+        <path d="M8.5 1.866a1 1 0 1 0-1 0V3h-2A4.5 4.5 0 0 0 1 7.5V8a1 1 0 0 0-1 1v2a1 1 0 0 0 1 1v1a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-1a1 1 0 0 0 1-1V9a1 1 0 0 0-1-1v-.5A4.5 4.5 0 0 0 10.5 3h-2zM14 7.5V13a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V7.5A3.5 3.5 0 0 1 5.5 4h5A3.5 3.5 0 0 1 14 7.5"/>
+      </svg></div>
+    <div class="content1">
+          <strong><h1> RENT DRONE & ROBOT</h1></strong>
+        </div>
+      <div class="search-bar">
+        <i class="bi bi-search"></i>
+        <input type="text" placeholder="Search">
+      </div>
+        <ul>
+            <li><a href="file:///C:/Users/abbas%20shaikh/Desktop/robot/index.html#">HOME</a></li>
+        <li><a href="#">PRODUCTS</a></li>
+        <li><a href="#">ORDER</a></li>
+        <li><a href="file:///C:/Users/abbas%20shaikh/Desktop/robot/login.html##">LOGIN</a></li>
+      </ul>
+    </header>
+    <br>
+    <br>
+    <br>
+    <div style="text-align: center;">
+        <div style="color: white;">
+    <strong><h1><U>DRONE CATEGORIES</U></h1></strong></div></div>
+    <section id="movies" class="movies-container"> 
+        <div class="movie" onclick="openModal(0)">
+          <img src="mini.webp" alt="Movie 1">
+          <h3>Mini Nano Drone</h3>
+          <strong><p>₹80 PER HOUR</p></strong>
+          <button>RENT NOW</button>
+        </div>
+        <div class="movie" onclick="openModal(1)">
+          <img src="DIJI.webp" alt="Movie 2">
+          <h3>Dji phantom 4 RTK</h3>
+          <strong><p>₹60 PER HOUR</p></strong>
+          <button>RENT NOW</button>
+        </div>
+        <div class="movie" onclick="openModal(2)">
+          <img src="DJINEO.webp" alt="Movie 3">
+          <h3>DJI Neo Fly More Drone</h3>
+          <strong><p>₹160 PER HOUR</p></strong>
+          <button>RENT NOW</button>
+        </div>
+        <div class="movie" onclick="openModal(3)">
+          <img src="HEAT.webp" alt="Movie 4">
+          <h3>Heattack Zenox</h3>
+          <strong><p>₹180 PER HOUR</p></strong>
+          <button>RENT NOW</button>
+        </div>
+        
+      </section>
+       
+      <section1 id="movies" class="movies-container">
+        <h2></h2>
+        <div class="movie" onclick="openModal(4)">
+            <img src="PIONEE.webp" alt="Movie 5">
+            <h3>Pioneer Drone</h3>
+            <strong><p>₹120 PER HOUR</p></strong>
+            <button>RENT NOW</button>
+          </div>
+        <div class="movie">
+          <img src="DJI3.webp" alt="Movie 2">
+          <h3>DJI Mini 3</h3>
+          <strong><p>₹220 PER HOUR</p></strong>
+          <button onclick="bookMovie('Movie Title 2')">RENT NOW</button>
+        </div>
+        <div class="movie">
+          <img src="M30T.webp" alt="Movie 4">
+          <h3>DJI Matrice M30T</h3>
+          <strong><p>₹280 PER HOUR</p></strong>
+          <button onclick="bookMovie('Movie Title 4')">RENT NOW</button>
+        </div>
+        <div class="movie">
+          <img src="PITA.webp" alt="Movie 5">
+          <h3>PITINXA</h3>
+          <strong><p>₹200 PER HOUR</p></strong>
+          <button onclick="bookMovie('Movie Title 5')">RENT NOW</button>
+        </div>
+      </section1>
+      <div style="text-align: center;">
+        <div style="color: white;">
+        <strong><h1><U>ROBOT CATEGORIES</U></h1></strong></div></div>
+        <section2 id="movies" class="movies-container"> 
+            <div class="movie" onclick="openModal(0)">
+              <img src="UNIT.png" alt="Movie 1">
+              <h3>Unitree Go2 Edu </h3>
+              <strong><p>₹2000 PER HOUR</p></strong>
+              <button>RENT NOW</button>
+            </div>
+            <div class="movie" onclick="openModal(1)">
+              <img src="DICAPRIO.webp" alt="Movie 2">
+              <h3>RoboDiCaprio</h3>
+              <strong><p>₹1800 PER HOUR</p></strong>
+              <button>RENT NOW</button>
+            </div>
+            <div class="movie" onclick="openModal(2)">
+              <img src="HIWONDER.webp" alt="Movie 3">
+              <h3>HiWonder ROSOrin</h3>
+              <strong><p>₹2500 PER HOUR</p></strong>
+              <button>RENT NOW</button>
+            </div>
+            <div class="movie" onclick="openModal(3)">
+              <img src="FAST.webp" alt="Movie 4">
+              <h3>FASTRON Eilik</h3>
+              <strong><p>₹180 PER HOUR</p></strong>
+              <button>RENT NOW</button>
+            </div>
+            
+          </section2>
+           
+          <section3 id="movies" class="movies-container">
+            <h2></h2>
+            <div class="movie">
+              <img src="SPIDER.webp" alt="Movie 2">
+              <h3>HiWonder ROSSpider</h3>
+              <strong><p>₹2200 PER HOUR</p></strong>
+              <button onclick="bookMovie('Movie Title 2')">RENT NOW</button>
+            </div>
+            <div class="movie">
+              <img src="MEDOG.webp" alt="Movie 3">
+              <h3>MechDog</h3>
+              <strong><p>₹1500 PER HOUR</p></strong>
+              <button onclick="bookMovie('Movie Title 3')">DOWNLOAD</button>
+            </div>
+          
+            <div class="movie">
+              <img src="TONI.webp" alt="Movie 4">
+              <h3>TonyPi Hiwonder </h3>
+              <strong><p>₹2800 PER HOUR</p></strong>
+              <button onclick="bookMovie('Movie Title 4')">RENT NOW</button>
+            </div>
+            <div class="movie">
+              <img src="ERICA.webp" alt="Movie 5">
+              <h3>Eureka Forbes Robo </h3>
+              <button onclick="bookMovie('Movie Title 5')">DOWNLOAD</button>
+            </div>
+          </section3>
+      <div id="movieModal" class="modal">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <div class="modal-content">
+          <div class="modal-image">
+            <img id="modalImg" src="" alt="Movie 1" />
+          </div>
+          <div class="modal-details">
+            <h3 id="modalTitle"></h3>
+            <p id="modalDescription"></p>
+            <a href="#" id="modalTrailer" target="_blank">View Trailer</a>
+            <div class="modal-navigation">
+              <button class="prev" onclick="changeMovie(-1)">&#10094; </button>
+              <button class="next" onclick="changeMovie(1)"> &#10095;</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <section class="contact">
+        <div class="contact-container">
+          <h2>Contact Us</h2>
+          <br>
+          <div class="socialmedia">
+            <a href="https://www.instagram.com/abbasshaikh_16/#" class="bi bi-instagram"></a>
+            <a href="#" class="bi bi-linkedin"></a>
+            <a href="#" class="bi bi-facebook"></a>
+            <a href="#" class="bi bi-github"></a>
+          </div>
+         <br>
+          <div class="contact-info">
+            <div class="info-item">
+              <i class="fas fa-map-marker-alt"></i>
+              <p>VASHI , NAVI MUMBAI</p>
+            </div>
+            <div class="info-item">
+              <i class="fas fa-phone-alt"></i>
+              <p>8291369730</p>
+            </div>
+            <div class="info-item">
+              <i class="fas fa-envelope"></i>
+              <p>abbasshaikh@rentrobodrone.com</p>
+            </div>
+          </div>
+          <form class="contact-form">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+            <button type="submit">Send Message</button>
+          </form>
+        </div>
+      </section>    
+      <footer class="footer">
+        <div class="footer-content">
+          <div class="footer-logo">
+          </div>
+        
+        </div>
+        <p class="footer-text">&copy; 2025 ROBODRONE. All rights reserved.</p>
+      </footer>    
+<script>
+    const toggle = document.getElementById('toggle')
+const nav = document.getElementById('nav')
+
+toggle.addEventListener('click', () => nav.classList.toggle('active'))
+let slideIndex = 0;
+    showSlides();
+
+    function showSlides() {
+        let i;
+        let slides = document.getElementsByClassName("mySlides");
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";  
+        }
+        slideIndex++;
+        if (slideIndex > slides.length) {slideIndex = 1}    
+        slides[slideIndex-1].style.display = "block";  
+        setTimeout(showSlides, 2000);
+    }
+
+</script>      
+   <style>
+    *{
+
+    padding: 0px;
+    margin: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins';
+    }
+    
+    .wrapper{
+      width: 100%;
+      height: 350vh;
+      background-image: linear-gradient(rgba(253, 13, 13, 0.6),
+  rgba(0, 0, 0, 0.6)), url(pic.jpg);
+  background-size: cover;
+  background-position: center;
+      
+    }
+    
+    header{
+      padding: 30px 3%;
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+    }
+    
+    header ul{
+      flex: 1;
+      text-align: right;
+      list-style: none;
+    }
+    
+    header ul li{
+      display: inline-block;
+      margin: 0 35px;
+    }
+    
+    header ul li a{
+      text-decoration: none;
+      color: #f4f0f0;
+      font-size: 16px;
+      font-weight: 300;
+    }
+    
+    .logo{
+      color: #f9f5f5;
+      font-size: 35px;
+    }
+    
+    .search-bar{
+      display: flex;
+      align-items: center;
+      gap: 15px;
+      margin-left: 6%;
+      border-bottom: 1px solid #f2f0f0;
+      padding-bottom: 3px;
+    }
+    
+    .search-bar i{
+      font-size: 15px;
+      color: #f4f0f0;
+    }
+    
+    .search-bar input{
+      background: none;
+      border: none;
+      outline: none;
+      font-size: 15px;
+      color: #f6f2f2;
+    }
+    
+    .search-bar input::placeholder{
+      color: #fbfafa;
+    }
+    .links-socialmedia {
+      position: absolute;
+      bottom: 30px;
+      left: 3%;
+    }
+    
+    .links-socialmedia ul {
+      list-style: none;
+      margin-bottom: 20px;
+    }
+    
+    .links-socialmedia ul li {
+      display: inline-block;
+      margin-right: 20px;
+    }
+    
+    .links-socialmedia ul li a {
+      text-decoration: none;
+      color: #f7f6f6;
+      font-size: 16px;
+      font-weight: 300;
+    }
+    
+    .socialmedia {
+      display: flex;
+      flex-direction: row;
+      gap: 40px;
+      margin-left: 12rem;
+      margin-top: -2rem;
+    }
+    
+    .socialmedia a {
+      color: #000000;
+      font-size: 20px;
+    }
+    
+#logo{
+  color: #f6f6f6;
+  font-size: 35px;
+}
+
+.content1{
+ margin-left: 5%;
+  display: flex;
+  align-items: center;
+  color: #f9f6f6;
+}
+    nav {
+  padding: 18px;
+  width: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 2px;
+  transition: width 0.6s linear;
+  overflow-x: hidden;
+}
+
+nav.active {
+  width: 350px;
+}
+
+nav ul {
+  display: flex;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  width: 0;
+  transition: width 0.6s linear;
+}
+
+nav.active ul {
+  width: 100%;
+}
+
+nav ul li {
+  transform: rotateY(0deg);
+  opacity: 0;
+  transition: transform 0.6s linear, opacity 0.6s linear;
+}
+
+nav.active ul li {
+  opacity: 1;
+  transform: rotateY(360deg);
+}
+
+nav ul a {
+  position: relative;
+  color: #faf6f6;
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+.icon {
+  background-color: #ffffff;
+  border: 0;
+  cursor: pointer;
+  padding: 0;
+  position: relative;
+  height: 30px;
+  width: 30px;
+}
+
+.icon:focus {
+  outline: 0;
+}
+
+.icon .line {
+  background-color: #3e8355;
+  height: 2px;
+  width: 20px;
+  position: absolute;
+  top: 10px;
+  left: 0px;
+  transition: transform 0.6s linear;
+}
+
+.icon .line2 {
+  top: auto;
+  bottom: 10px;
+}
+
+nav.active .icon .line1 {
+  transform: rotate(-765deg) translateY(5.5px);
+}
+
+nav.active .icon .line2 {
+  transform: rotate(765deg) translateY(-5.5px);
+}
+
+        body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: #333333;
+    padding: 10px 20px;
+    color: white;
+    
+}
+
+
+.search-bar {
+    display: left;
+    align-items: center;
+}
+
+.search-bar input {
+    padding: 5px;
+    border: none;
+    border-radius: 3px 0 0 3px;
+    outline: none;
+}
+
+.search-bar button {
+    padding: 6px 10px;
+    border: none;
+    background-color: #555;
+    color: white;
+    cursor: pointer;
+    border-radius: 0 3px 3px 0;
+}
+
+.search-bar button:hover {
+    background-color: #777;
+}
+
+.location select {
+ margin-left: 40rem;
+    padding: 5px;
+    border: none;
+    border-radius: 3px;
+    background-color: #555;
+    color: white;
+    cursor: pointer;
+    outline: none;
+}
+
+.location select:hover {
+    background-color: #777;
+}
+
+.profile img {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+    border: 2px solid white;
+    align-items: right;
+}
+.slideshow-container {
+            position: relative;
+            max-width: 100%;
+            max-height: 60%;
+            margin: auto;
+        }
+        .mySlides {
+            display: none;
+        }
+        img {
+            width: 100%;
+            height: 50%;
+        }
+.movies-container {
+  display: flex;
+  justify-content: space-around;
+  margin: 20px;
+}
+
+.movie {
+  text-align: center;
+  background: white;
+  border-radius: 8px;
+  padding: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin: 3rem;
+  transition: transform 0.2s;
+
+}
+.movie:hover{
+  transform: scale(1.05);
+}
+
+.movie img {
+  width: 250px;
+  height: 300px;
+  border-radius: 8px;
+}
+
+button {
+  padding: 10px 20px;
+  background: #ff0000;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #ff0000;
+}
+.modal {
+        display: none;
+        position: fixed;
+        z-index: 1000;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        overflow: auto;
+        background-color: rgba(0, 0, 0, 0.8);
+        justify-content: center;
+        align-items: center;
+       
+      }
+
+      .modal-content {
+        display: flex;
+        background: white;
+        margin: auto;
+        padding: 60px;
+        border-radius: 10px;
+        width: 70%;
+        max-width: 900px;
+        
+      }
+
+      .modal-image img {
+        width: 400px;
+        height: 400px;
+        border-radius: 10px;
+      }
+
+      .modal-details {
+        margin-left: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+      }
+
+      .modal-details h3 {
+        margin: 0 0 10px 0;
+      }
+
+      .modal-navigation button {
+        margin: 5px;
+        padding: 10px 15px;
+        background: #9ba7b4;
+        color: white;
+        border: none;
+        border-radius: 85px;
+        cursor: pointer;
+      }
+
+      .modal-navigation button:hover {
+        background: #55585d;
+      }
+
+      .close {
+        position: absolute;
+        top: 10px;
+        margin: 5rem;
+        right: 30px;
+        font-size: 30px;
+        color: white;
+        cursor: pointer;
+      }
+      .contact {
+  background-color: #e7b580;
+  padding: 40px 0;
+  text-align: center;
+  color: #040404;
+}
+
+.contact-container {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.contact h2 {
+  font-size: 36px;
+  margin-bottom: 40px;
+}
+.info-item {
+  margin: 0 20px;
+  text-align: center;
+}
+
+.info-item i {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  border: none;
+}
+
+.contact-form textarea {
+  resize: vertical;
+}
+
+.contact-form button {
+  display: inline-block;
+  background-color: #ff0000;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.contact-form button:hover {
+  background-color: #e60000;
+}
+
+.contact-info {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 40px;
+}
+.footer {
+  background-color: #070e16;
+  padding: 10px 0;
+  color: #fff;
+  text-align: center;
+}
+
+.footer-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.footer-text {
+  font-size: 14px;
+}
+    </style>
+   </body>
+    </html>    

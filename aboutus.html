@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+   
+</head>
+
+<body>
+    <div class="about-container">
+        <h1>About Us</h1>
+        <div class="about-us">
+            <img src="photo.jpg" alt="Profile Picture">
+            <p>
+                <strong>NAME:</strong> Abbas Nooruddin Shaikh.<br>
+                <strong>STUDYING:</strong> Bachelor of Computer Applications (BCA).<br>
+                <strong>COLLEGE:</strong>  Bakliwal Foundation College.<br>
+                <strong>PROJECT:</strong> RENT ROBOT & DRONE.
+            </p>
+        </div>
+        <br>
+        <div class="about-us-1">
+            <img src="2.jpg" alt="Profile Picture">
+            <p>
+                <strong>NAME:</strong> Aditya Chandrakant Naik.<br>
+                <strong>STUDYING:</strong> Bachelor of Computer Applications (BCA).<br>
+                <strong>COLLEGE:</strong>  Bakliwal Foundation College.<br>
+                <strong>PROJECT:</strong> RENT ROBOT & DRONE.
+            </p>
+        </div>
+        <br>
+        <div class="vision">
+            <h2>Used Language</h2>
+            <ul>
+                <li>HTML.</li>
+                <li>CSS.</li>
+                <li>JAVSCRIPT</li>
+            </ul>
+        </div>
+        <div class="container">
+            <h1>Feedback Form</h1>
+            <form action="submit_form.php" method="POST">
+                <label for="name">Your Name:</label>
+                <input type="text" id="name" name="name" required>
+    
+                <label for="email">Your Email:</label>
+                <input type="email" id="email" name="email" required>
+    
+                <label for="feedback">Your Feedback:</label>
+                <textarea id="feedback" name="feedback" required></textarea>
+    
+                <button type="submit" class="submit-btn">Submit Feedback</button>
+            </form>
+        </div>
+    </div>
+    
+
+     <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            background-image: linear-gradient(rgba(253, 13, 13, 0.6),
+  rgba(0, 0, 0, 0.6)), url(pic.jpg);
+  background-size: cover;
+  background-position: center;
+        }
+        .about-us {
+            display: flex;
+            align-items: center;
+        }
+        .about-us img {
+            margin-right: 80px;
+            width: 150px;
+            height: auto;
+        }
+        .about-us p {
+            margin: 0;
+        }
+        .about-us-1 {
+            display: flex;
+            align-items: center;
+        }
+        .about-us-1 img {
+            margin-right: 80px;
+            width: 150px;
+            height: auto;
+            
+        }
+        .about-us-1 p {
+            margin: 0;
+        }
+
+
+        .about-container {
+            max-width: 800px;
+            margin: 50px auto;
+            padding: 20px;
+            background: white;
+            border-radius: 5px;
+        }
+
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+
+        h2 {
+            color: #826827;
+        }
+
+        p {
+            line-height: 1.6;
+            color: #555;
+        }
+
+        
+        .vision {
+            margin-bottom: 20px;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 600px;
+            margin: 50px auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            text-align: center;
+            color: #333;
+        }
+        label {
+            font-weight: bold;
+            margin-top: 10px;
+            display: block;
+        }
+        input[type="text"], input[type="email"], textarea, select {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+        textarea {
+            resize: vertical;
+            min-height: 100px;
+    
+        }
+        .submit-btn {
+            background-color: #303998;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            font-size: 16px;
+            border-radius: 25px;
+            width: 100%;
+        }
+        .submit-btn:hover {
+            background-color: #ae972e;
+        }
+    </style>
+    </style>
+</body>
+
+</html>

@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login and Signup</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+        integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog=="
+        crossorigin="anonymous" />
+  
+</head>
+
+<body>
+    <div class="container">
+        <div id="loginForm">
+            <img src="—Pngtree—little cute robot funny virtual_14551911.png" alt="logo" class="logo" >
+            <input type="text" id="loginEmail" placeholder="Email" required>
+            <input type="password" id="loginPassword" placeholder="Password" required>
+            <button onclick="login()">Regular</button>
+            <div class="toggle">Are you sure you've an Regular? <a href="#" onclick="toggleForms()">Join Us</a></div>
+        </div>
+
+        <div id="signupForm" class="hidden">
+            <img src="dronlogo.png" alt="logo" class="logo-1" >
+            <input type="text" id="JoinUsName" placeholder="Name" required>
+            <input type="email" id="JoinUsEmail" placeholder="Email" required>
+            <input type="password" id="JoinUsPassword" placeholder="Password" required>
+            <button onclick="signup()">Join Us</button>
+            <div class="toggle">Already have an account? <a href="#" onclick="toggleForms()">Login</a></div>
+        </div>
+    </div>
+    
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-image: url(Animal-Zoo-Backgrounds.jpg);
+            background-position: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .logo {
+      width: 200px;
+      margin: 2rem;
+        }
+        .logo-1 {
+      width: 200px;
+      margin: 2rem;
+        }
+        
+        .container {
+            background: transparent;
+            padding: 85px;
+            border-radius: 5px;
+            width: 300px;
+        }
+
+        h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        input[type="text"],
+        input[type="password"],
+        input[type="email"] {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 25px;
+        }
+
+        button {
+            width: 65%;
+            padding: 16px;
+            background-color: #d52b1e;
+            color: white;
+            border-radius: 35px;
+            cursor: pointer;
+            margin: 10%;
+            left: 50%;
+            right: 50%;
+            
+        }
+
+        button:hover {
+            background-color:#d52b1e;
+        }
+
+        .toggle {
+            text-align: center;
+            margin-top: 10px;
+        }
+
+        .toggle a {
+            color: #171817;
+            text-decoration: none;
+        }
+
+        .toggle a:hover {
+            text-decoration: underline;
+        }
+
+        .hidden {
+            display: none;
+        }
+    </style>
+    <script>
+        function toggleForms() {
+            const loginForm = document.getElementById('loginForm');
+            const signupForm = document.getElementById('signupForm');
+            loginForm.classList.toggle('hidden');
+            signupForm.classList.toggle('hidden');
+        }
+
+        function login() {
+            const email = document.getElementById('loginEmail').value;
+            const password = document.getElementById('loginPassword').value;
+
+           
+            alert(`Logged in with Email: ${email}`);
+        }
+
+        function signup() {
+            const name = document.getElementById('signupName').value;
+            const email = document.getElementById('signupEmail').value;
+            const password = document.getElementById('signupPassword').value;
+
+            
+            alert(`Signed up with Name: ${name}, Email: ${email}`);
+        }
+    </script>
+</body>
+
+</html>
